@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome del Sito - Creatività Infinita</title>
+
+    <!-- Fonr Google -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap">
+     <!-- Stile CSS di base -->
+      <style>
+    /* Palette colori */
+    :root{
+        --col-primario: #ff6f61; 
+        --col-secondario: #4a90e2; 
+        --col-terziario: #f5f7fa;
+        --col-accente: #ffd166;
+        --col-testo: #333333;   
+        }
+
+        /* Reset base */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;           
+        }
+
+        body{
+            background: var(--col-terziario);
+            color: var(--col-testo);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2rem;
+        }
+        header h1{
+            font-family: 'montserrat', sans-serif;
+            font-size: 3rem;
+            color: var(--col-primario);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+            animation: pulse 2s infinite;
+        }
+        header{
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        header p{
+            font-size: 1.2rem;
+            color: var(--col-secondario);
+            font-weight: 600;
+        }
+
+
+
+        /* Pulsing animation effetto "wow" */
+        @keyframes pulse{
+            0%, 100% {
+                text-shadow: 0 0 10px var(--col-primario), 0 0 20px var(--col-primario);
+            }
+            50% {
+                text-shadow: 0 0 10px var(--col-accente), 0 0 30px var(--col-accente);
+            }
+        }
+
+         /* Sezione interattiva */
+    .interactive-section {
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .interactive-section:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 12px 30px rgba(255, 111, 97, 0.5);
+    }
+
+    .interactive-section h2 {
+      color: var(--col-secondario);
+      margin-bottom: 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .interactive-section p {
+      font-size: 1rem;
+      color: var(--col-testo);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: var(--col-testo);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dai vita alle tue idee</h1>
+    <p>Un viaggio tra design e innovazione</p>
+  </header>
+
+  <section class="interactive-section" onclick="alert('Hai cliccato!')">
+    <h2>Prova il tocco creativo</h2>
+    <p>Un semplice gesto, un grande impatto visivo.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Nome del Sito. Tutti i diritti riservati.
+  </footer>
+     <script>
+    // Qui puoi aggiungere altre funzionalità JS interattive
+  </script>
+
+</body>
+</html>    
+
+
+
+
+
+      </style>
+</head>
+<body>
+    
+</body>
+</html>
